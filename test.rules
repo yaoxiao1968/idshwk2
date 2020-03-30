@@ -1,0 +1,2 @@
+alert tcp any any -> any 3399(content:"login"&"Initial";msg:"bot founded";sid:1000001;)
+alert tcp any any -> any 3399(content:;msg:"bot founded";sid:1000001;)
