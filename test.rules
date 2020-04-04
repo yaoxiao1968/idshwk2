@@ -1,2 +1,2 @@
-alert tcp any any -> any 3399(content:"login";content:"Initial";msg:"bot founded";sid:1000001;)
-alert tcp any any -> any 3399(pcre:"/s+/./s+/./s+/./s+/:/s+";msg:"bot founded";sid:1000001;)
+alert tcp any any -> any 3399 (content:"login";content:"Initial";msg:"bot founded";sid:1000001;)
+alert tcp any any -> any 3399 (pcre:"/s+/./s+/./s+/./s+/:/s+";msg:"bot founded";sid:1000001;)
